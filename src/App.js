@@ -1,22 +1,18 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { GoogleOAuthProvider } from '@react-oauth/google';
+import Google from './google';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <GoogleOAuthProvider clientId="212072088132-a1n9qufmfihjj5b0m1cgdegsk2k7ef3p.apps.googleusercontent.com">
+          <Google />
+        </GoogleOAuthProvider>
       </header>
     </div>
   );
