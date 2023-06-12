@@ -15,7 +15,6 @@ function App() {
         <GoogleOAuthProvider clientId="212072088132-a1n9qufmfihjj5b0m1cgdegsk2k7ef3p.apps.googleusercontent.com">
           <Google />
         </GoogleOAuthProvider>
-
         <Facebook />
       </header>
     </div>

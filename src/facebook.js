@@ -7,8 +7,6 @@ function Facebook() {
   };
 
   return (
-    <div>
-      <h1>Login with Facebook</h1>
       <FacebookLogin
         appId="188891930628394"
         autoLoad={false}
@@ -18,7 +16,6 @@ function Facebook() {
           <button onClick={renderProps.onClick}>Login with Facebook</button>
         )}
       />
-    </div>
   );
 }
 
